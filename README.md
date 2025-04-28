@@ -125,7 +125,7 @@ The network utilizes private IPv4 addressing, primarily in the `10.x.x.x` range,
 The following tables detail the significant port configurations for each access switch based on the simulation file. Unused ports are generally configured in VLAN 1 (default) and are administratively shut down for security. Trunk ports carry tagged traffic for multiple VLANs, while access ports carry untagged traffic for a single assigned VLAN.
 
 **SW-Verwaltung (VLANs: 10, 11, 80, 99)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 10 | PC-GF01 |
 | Fa0/2 - Fa0/10 | Down | Access | 1 | - |
@@ -138,37 +138,37 @@ The following tables detail the significant port configurations for each access 
 | Gi0/2 | Up | Access | 99 | Management-Laptop |
 
 **SW-Finanzen (VLANs: 20, 99)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 20 | PC-FI01 |
 | Fa0/2 | Up | Access | 20 | PC-FI02 |
 | Fa0/3 - Fa0/23 | Down | Access | 1 | - |
-| Fa0/24 | Up | Access | 99 | (Management) |
+| Fa0/24 | Up | Access | 99 | - |
 | Gi0/1 | Up | Trunk | 20, 99 | SW-Core |
 | Gi0/2 | Down | Access | 1 | - |
 
 **SW-Lager (VLANs: 30, 99)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 30 | PC-LA01 |
 | Fa0/2 | Up | Access | 30 | PC-LA02 |
 | Fa0/3 - Fa0/23 | Down | Access | 1 | - |
-| Fa0/24 | Up | Access | 99 | (Management) |
+| Fa0/24 | Up | Access | 99 | - |
 | Gi0/1 | Up | Trunk | 30, 99 | SW-Core |
 | Gi0/2 | Down | Access | 1 | - |
 
 **SW-Einkauf (VLANs: 40, 99)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 40 | PC-EK01 |
 | Fa0/2 | Up | Access | 40 | PC-EK02 |
 | Fa0/3 - Fa0/23 | Down | Access | 1 | - |
-| Fa0/24 | Up | Access | 99 | (Management) |
+| Fa0/24 | Up | Access | 99 | - |
 | Gi0/1 | Up | Trunk | 40, 99 | SW-Core |
 | Gi0/2 | Down | Access | 1 | - |
 
 **SW-Verkauf (VLANs: 50, 60, 70, 99)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 50 | PC-VK01 |
 | Fa0/2 | Up | Access | 50 | PC-VK02 |
@@ -176,18 +176,18 @@ The following tables detail the significant port configurations for each access 
 | Fa0/20 | Up | Access | 60 | AP-Mitarbeiter |
 | Fa0/21 | Up | Access | 70 | AP-Kunden |
 | Fa0/22 - Fa0/23 | Down | Access | 1 | - |
-| Fa0/24 | Up | Access | 99 | (Management) |
+| Fa0/24 | Up | Access | 99 | - |
 | Gi0/1 | Up | Trunk | 50, 60, 70, 99 | SW-Core |
 | Gi0/2 | Down | Access | 1 | - |
 
 **SW-Server (VLANs: 1, 99, 100)**
-| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device (Likely) |
+| Port | Status | Mode | VLAN(s) Allowed/Assigned | Connected Device |
 | :--------------- | :----- | :----- | :----------------------- | :------------------------ |
 | Fa0/1 | Up | Access | 100 | DHCP/DNS-Server |
 | Fa0/2 | Up | Access | 100 | WEB-Server |
 | Fa0/3 | Up | Access | 100 | Fileserver |
 | Fa0/4 - Fa0/23 | Down | Access | 1 | - |
-| Fa0/24 | Up | Access | 99 | (Management) |
+| Fa0/24 | Up | Access | 99 | - |
 | Gi0/1 | Up | Trunk | 1, 99, 100 | R-Internet (Gi0/1) |
 | Gi0/2 | Up | Access | 1 | (Unused/Security Port? Probably unconnected) |
 
