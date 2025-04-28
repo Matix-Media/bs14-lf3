@@ -251,7 +251,7 @@ _(Note: Port assignments are based on typical connections and active links in th
        description Controlling_VLAN_Gateway
        encapsulation dot1Q 21
        ip address 10.1.20.33 255.255.255.240
-       ip helper-address 192.168.100.3 ! If DHCP is needed
+       ip helper-address 192.168.100.3
       end
       ```
   2.  Create an Access Control List (ACL) to restrict traffic:
